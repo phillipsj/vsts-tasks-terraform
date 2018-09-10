@@ -1,0 +1,54 @@
+{
+    "manifestVersion": 1,
+    "id": "Terraform",
+    "name": "Terraform",
+    "version": "0.1.0",
+    "publisher": "phillipsj",
+    "public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Use Terraform with VSTS.",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"
+    },
+    "files": [
+        {
+            "path": "TerraformTool"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/phillipsj/vsts-tasks-terraform#README"
+        },
+        "support": {
+            "uri": "https://github.com/phillipsj/vsts-tasks-terraform"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/phillipsj/vsts-tasks-terraform"
+    },
+    "contributions": [
+        {
+            "id": "TerraformTool",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "TerraformTool"
+            }
+        }
+    ]
+}

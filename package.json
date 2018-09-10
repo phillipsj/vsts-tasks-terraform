@@ -1,0 +1,20 @@
+{
+  "name": "vsts-terrafrom-tasks",
+  "version": "0.1.0",
+  "description": "Install and execute [terraform](https://terraform.io) as part of your build & release pipelines.",
+  "main": "index.js",
+  "scripts": {
+    "build:tool": "cd TerraformTool && npm run build:prod",
+    "build": "npm run build:tool && tfx extension create --manifest-globs vss-extension.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipsj/vsts-tasks-terraform.git"
+  },
+  "author": "Jamie Phillips",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/phillipsj/vsts-tasks-terraform/issues"
+  },
+  "homepage": "https://github.com/phillipsj/vsts-tasks-terraform#readme"
+}

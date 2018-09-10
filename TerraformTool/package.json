@@ -1,0 +1,28 @@
+{
+  "name": "vsts-terraform-tasks",
+  "version": "0.1.0",
+  "description": "Terraform Tasks for VSTS",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "build:prod": "npm i && npm run build && npm prune --production && npm dedupe",
+    "pretest": "npm run build",
+    "test": "mocha --recursive",
+    "upload": "npm run build:prod && tfx build tasks upload --task-path ."
+  },
+  "keywords": [
+    "terraform",
+    "vsts"
+  ],
+  "author": "Jamie Phillips",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "vsts-task-tool-lib": "^0.9.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.4",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "typescript": "^2.9.2"
+  }
+}
