@@ -1,5 +1,5 @@
 {
-    "id": "b6ddafd8-587a-4e47-94f7-3102ed47dad8",
+    "id": "1ae5638b-b276-4e0c-9b98-0732eb235935",
     "name": "TerraformTool",
     "friendlyName": "Terraform Tool Installer",
     "description": "Finds or Downloads and caches specified version spec of Terraform and adds it to the PATH.",
